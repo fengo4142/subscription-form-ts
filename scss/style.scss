@@ -1,0 +1,83 @@
+@import '_variables.scss';
+
+body {
+  font-family: sans-serif;
+  background-color: $white;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  .inline-form {
+    padding: 3px;
+    min-width: 300px;
+
+    &__label {
+      display: block;
+      font-size: $mainFont;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0.1px;
+    }
+
+    &__control {
+      padding: 5px;
+      display: flex;
+      border: 1px solid $lightGrey;
+      border-radius: 5px;
+      transition: all ease 0.3s;
+
+      &.active {
+        border: 1px solid $dark;
+      }
+    }
+
+    &__error {
+      display: none;
+      font-size: $secondaryFont;
+      line-height: 20px;
+      color: $red;
+
+      &.active {
+        display: block;
+      }
+    }
+
+    input {
+      width: calc(100% - 70px);
+      text-indent: 10px;
+      font-size: $mainFont;
+      line-height: 28px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      width: 70px;
+      padding-top: 5px;
+      font-size: $secondaryFont;
+      line-height: 28px;
+      background-color: $dark;
+      border: 1px solid $dark;
+      border-radius: 4px;
+      color: $white;
+      outline: none;
+      transition: all ease 0.3s;
+      cursor: pointer;
+
+      &.disabled {
+        background-color: $lightDark;
+      }
+
+      &:hover {
+        background-color: $dark;
+      }
+    }
+  }
+}
