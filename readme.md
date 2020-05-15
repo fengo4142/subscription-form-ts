@@ -15,6 +15,11 @@
 
 ## How to use
 
+- npm install
+
+  install npm packages
+
+
 - npm start
 
   It will start express server to run built static page
