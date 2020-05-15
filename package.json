@@ -1,0 +1,53 @@
+{
+  "name": "code-challenge-wbaumann",
+  "version": "1.0.0",
+  "description": "HTML/CSS/JS Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "test": "jest --config jest.config.js",
+    "lint": "tslint --fix --project tsconfig.json 'src/**/*.{ts,tsx}'",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx,json}\"",
+    "pre-commit": "npm run prettier && npm run lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@types/jest": "^25.2.2",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^25.5.1",
+    "ts-loader": "^7.0.4",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  }
+}
