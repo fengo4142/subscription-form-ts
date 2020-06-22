@@ -1,4 +1,4 @@
-# 🚀 Code Callenge - HTML/CSS/JavaScript - May 2020
+# 🚀 Subscription-Form - HTML/CSS/JavaScript - May 2020
 
 
 ## Development Environment Used
